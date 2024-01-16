@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   shared_preferences:
+  sqflite:
   photo_view:
   intl: ^0.17.0
   pin_input_text_field:

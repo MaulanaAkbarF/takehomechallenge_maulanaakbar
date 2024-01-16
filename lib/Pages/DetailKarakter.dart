@@ -6,6 +6,7 @@ import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../DataAccess/Dataaccess.dart';
 import '../Style/styleapp.dart';
 
 class DetailKarakter extends StatefulWidget {
@@ -22,11 +23,15 @@ class _DetailKarakterState extends State<DetailKarakter> {
   late Map<String, dynamic> characterDataReceived;
   late List<Map<String, dynamic>> characters = [];
   late List<Map> teksUI;
+  late String cekFavorit;
+  late DatabaseHelper dbHelper;
 
   @override
   void initState() {
     super.initState();
+    cekFavorit = 'Tambah ke Favorit';
     characterDataReceived = widget.characterData;
+    dbHelper = DatabaseHelper();
     teksUI = [
       {
         'Header': '$characterDataReceived',
@@ -187,6 +192,45 @@ class _DetailKarakterState extends State<DetailKarakter> {
                           children: [
                             Column(
                               children: [
+                                Align(
+                                  alignment: FractionalOffset.topLeft,
+                                  child: GestureDetector(
+                                    onTap: () async {
+                                      if (cekFavorit == 'Tambah ke Favorit') {
+                                        await dbHelper.insertFavourite(characterDataReceived['id'], json.encode(characterDataReceived));
+                                        setState(() {
+                                          cekFavorit = 'Hapus dari Favorit';
+                                        });
+                                      } else {
+                                        // Logika untuk menghapus dari favorit jika diperlukan
+                                        // dbHelper.deleteFavourite(characterDataReceived['id']);
+                                        // setState(() {
+                                        //   cekFavorit = 'Tambah ke Favorit';
+                                        // });
+                                      }
+                                    },
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.red.shade100,
+                                        borderRadius: BorderRadius.circular(8),
+                                          border: Border.all(color: Colors.red)
+                                      ),
+                                      child: Padding(
+                                        padding: EdgeInsets.symmetric(vertical: 6, horizontal: 16),
+                                        child: Text(
+                                          cekFavorit,
+                                          style: StyleApp.largeTextStyle.copyWith(
+                                            fontStyle: FontStyle.italic,
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w800,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+
+                                ),
+                                const SizedBox(height: 20,),
                                 Align(
                                   alignment: FractionalOffset.topLeft,
                                   child: RichText(

@@ -15,8 +15,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 3000), () {
-      Get.to(() => const Enter(), transition: Transition.topLevel);
+    Future.delayed(const Duration(milliseconds: 2000), () {
+      Get.to(() => const Enter(), transition: Transition.fade, duration: Duration(milliseconds: 600));
     });
   }
 

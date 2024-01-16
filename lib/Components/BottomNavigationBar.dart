@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../Pages/BottomNavBar/Favorit.dart';
+import '../Pages/BottomNavBar/Information.dart';
 import '../Pages/BottomNavBar/Beranda.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
@@ -20,10 +22,8 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           _buildBottomNavigationBarItem(Icons.home, 'Beranda'),
-          _buildBottomNavigationBarItem(Icons.apps, 'Aplikasi'),
-          _buildBottomNavigationBarItem(Icons.bar_chart, 'Statistik'),
-          _buildBottomNavigationBarItem(Icons.library_books, 'Berita'),
-          _buildBottomNavigationBarItem(Icons.account_circle, 'Profil'),
+          _buildBottomNavigationBarItem(Icons.library_books, 'Favorit'),
+          _buildBottomNavigationBarItem(Icons.account_circle, 'Informasi'),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.green,
@@ -63,13 +63,9 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       case 0:
         return Beranda();
       case 1:
-        return _buildPage('Halaman Aplikasi');
+        return Favorit();
       case 2:
-        return _buildPage('Halaman Statistik');
-      case 3:
-        return _buildPage('Halaman Berita');
-      case 4:
-        return _buildPage('Halaman Profil');
+        return Information();
       default:
         return _buildPage('Halaman Kosong');
     }
