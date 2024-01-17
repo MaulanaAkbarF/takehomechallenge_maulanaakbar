@@ -1,6 +1,6 @@
 # TakeHomeChallengeApp
 
-## <a name="Attention"></a> Introduction :
+## <a name="Attention"></a> Attention :
 If you don't see anything project, go to my Master Branch
 
 ## <a name="apk-link"></a> APK Link :
