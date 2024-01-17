@@ -1,14 +1,14 @@
 # TakeHomeChallengeApp
 
 <p align="center">
-  <a href="https://github.com/MaulanaAkbarF/takehomechallenge_maulanaakbar/tree/master"><img title="Author" src="https://img.shields.io/badge/Author-GROUP A2  & A3  Polije Nganjuk-purple.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://github.com/MaulanaAkbarF/takehomechallenge_maulanaakbar/tree/master"><img title="Author" src="https://img.shields.io/badge/Author-MAULANA AKBAR-purple.svg?style=for-the-badge&logo=github" /></a>
 </p>
 <p align="center">
   <a href="https://github.com/MaulanaAkbarF/takehomechallenge_maulanaakbar/tree/master"><img title="RATING" src="https://img.shields.io/badge/CURRENT RATING-70%20%2F%20100-green?colorA=%23555555&colorB=%23FC5E00&style=for-the-badge"></a>
 </p>
 <p align="center">
   <a href="https://github.com/MaulanaAkbarF/takehomechallenge_maulanaakbar"><img title="Stars" src="https://img.shields.io/github/stars/MaulanaAkbarF/takehomechallenge_maulanaakbar?color=red&style=flat-square" /></a>
-  <a href="https://github.com/MaulanaAkbarF/takehomechallenge_maulanaakbar/network/members"><img title="Forks" src="https://img.shields.io/github/forks/MaulanaAkbarF/takehomechallenge_maulanaakbar?color=red&style=flat-square" /></a>style=flat-square" /></a>
+  <a href="https://github.com/MaulanaAkbarF/takehomechallenge_maulanaakbar/network/members"><img title="Forks" src="https://img.shields.io/github/forks/MaulanaAkbarF/takehomechallenge_maulanaakbar?color=red&style=flat-square"/>
   <a href="https://github.com/MaulanaAkbarF/takehomechallenge_maulanaakbar/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/MaulanaAkbarF/takehomechallenge_maulanaakbar?label=watchers&color=blue&style=flat-square" /></a>
   <img src="https://img.shields.io/badge/maintained%3F-yes-green.svg?style=flat" />
   <img src="https://img.shields.io/github/repo-size/MaulanaAkbarF/takehomechallenge_maulanaakbar" /> <br>
