@@ -1,16 +1,44 @@
-# takehomechallenge_maulanaakbar
+# TakeHomeChallengeApp
 
-A new Flutter project.
+## <a name="introduction"></a> Introduction :
+From Maulana AKbar Firdausya, this is my Flutter Application to accomplish the test from BIGIO Mobile Developer TakeHomeChallenge, in the application there are several pages that you can see in the Features menu.
 
-## Getting Started
+## Table of Contents
 
-This project is a starting point for a Flutter application.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Libraries](#libraries)
+- [Project Structure](#project-structures)
+- [APK Link](#apk-link)
 
-A few resources to get you started if this is your first Flutter project:
+## <a name="features"></a> Features :
+- Splash Screen Page
+- Welcome Page
+- List of character and searching Page
+- Detail character Page
+- Favorite Page
+- Information Page
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## <a name="libraries"></a> Libraries :
+- Flutter version 3.10.5
+- Shared Preferences
+- Sqflite (SQ Flutter Lite)
+- Photo View
+- intl
+- Flutter Native Splash
+- Http
+- Url_launcher
+
+## <a name="project-structures"></a> Project Structure :
+* `Main`
+* `Style`
+* `Pages`
+* `Components`
+* `Dataaccess`
+* `Controllers`
+* `Assets`
+
+
+## <a name="apk-link"></a> APK Link :
+[Download Demo Aplikasi disini](https://drive.google.com/file/d/17dKsgGiGproWdawzRPMW_64jPjZqc3WJ/view?usp=sharing) (APK File)
